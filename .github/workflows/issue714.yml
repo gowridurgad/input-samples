@@ -33,13 +33,4 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Run Unit Tests
-        run: ./gradlew test
-
-      - name: Notify Success
-        if: success()
-        run: echo "Build and tests passed!"
-
-      - name: Notify Failure
-        if: failure()
-        run: echo "Build or tests failed!"
+    
